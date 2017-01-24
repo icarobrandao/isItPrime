@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11761" systemVersion="16C68" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PrimeNumbersApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="is it prime?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LtT-nr-cSs">
+                                <rect key="frame" x="16" y="36" width="288" height="41"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="41" id="0QS-8n-bhE"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="enter a number" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ifd-Yh-C88">
+                                <rect key="frame" x="16" y="113" width="288" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mld-79-JY8">
+                                <rect key="frame" x="144" y="151" width="32" height="30"/>
+                                <state key="normal" title="is it?"/>
+                                <connections>
+                                    <action selector="isItFunction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3Mw-R1-1nL"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9qU-oF-Equ">
+                                <rect key="frame" x="16" y="204" width="288" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="JEG-lQ-sOp"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="LtT-nr-cSs" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="16" id="28Q-cS-fhc"/>
+                            <constraint firstItem="LtT-nr-cSs" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="A60-el-UIW"/>
+                            <constraint firstItem="Ifd-Yh-C88" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="KP9-1Y-pvO"/>
+                            <constraint firstItem="9qU-oF-Equ" firstAttribute="trailing" secondItem="Ifd-Yh-C88" secondAttribute="trailing" id="Lag-Rh-eNa"/>
+                            <constraint firstItem="LtT-nr-cSs" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Ykf-9y-n2G"/>
+                            <constraint firstItem="Mld-79-JY8" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="128" id="acr-91-dKJ"/>
+                            <constraint firstItem="Ifd-Yh-C88" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="bPo-xx-LfP"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Mld-79-JY8" secondAttribute="trailing" constant="128" id="dWA-F1-06X"/>
+                            <constraint firstItem="9qU-oF-Equ" firstAttribute="leading" secondItem="Ifd-Yh-C88" secondAttribute="leading" id="eMX-O4-qEa"/>
+                            <constraint firstItem="9qU-oF-Equ" firstAttribute="top" secondItem="Mld-79-JY8" secondAttribute="bottom" constant="23" id="kgC-Mw-fyp"/>
+                            <constraint firstItem="Mld-79-JY8" firstAttribute="top" secondItem="Ifd-Yh-C88" secondAttribute="bottom" constant="8" id="sL7-Te-ahS"/>
+                            <constraint firstItem="Ifd-Yh-C88" firstAttribute="top" secondItem="LtT-nr-cSs" secondAttribute="bottom" constant="36" id="x8M-D0-9wr"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="number" destination="Ifd-Yh-C88" id="ZJs-uA-VEq"/>
+                        <outlet property="result" destination="9qU-oF-Equ" id="E4F-OX-osc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="202.5" y="137.32394366197184"/>
+        </scene>
+    </scenes>
+</document>
